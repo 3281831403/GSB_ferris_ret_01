@@ -1,0 +1,16 @@
+[package]
+name = "ferrisscript_runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ferrisscript_compiler = { path = "../compiler" }
+
+[dev-dependencies]
+criterion = { workspace = true }
+ferrisscript_compiler = { path = "../compiler" }
+
+[[bench]]
+name = "runtime_benchmarks"
+harness = false

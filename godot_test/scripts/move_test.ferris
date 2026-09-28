@@ -1,0 +1,16 @@
+// TEST: move_test_godot
+// CATEGORY: integration
+// DESCRIPTION: Continuous movement using _process and self.position
+// EXPECT: success
+// ASSERT: Movement test started! Node will move right.
+//
+// Test script for _process with self.position
+// Moves the node 50 pixels per second to the right
+
+fn _ready() {
+    print("Movement test started! Node will move right.");
+}
+
+fn _process(delta: f32) {
+    self.position.x += 50.0 * delta;
+}

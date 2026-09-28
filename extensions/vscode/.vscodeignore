@@ -1,0 +1,52 @@
+# VS Code Extension Ignore
+
+# Source files (we ship compiled JS in out/)
+src/
+tsconfig.json
+.eslintrc.json
+
+# Build artifacts we don't ship
+dist/
+*.vsix
+
+# Dependencies
+node_modules/
+
+# Development
+.vscode-test/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test files
+test/
+**/*.test.ts
+**/*.test.js
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# GitHub
+.github/
+
+# Source files (if using TypeScript)
+src/
+
+# Config files
+tsconfig.json
+tslint.json
+.eslintrc
+.prettierrc
+
+# Documentation (keep only README and CHANGELOG in package)
+docs/
+
+# Development scripts
+scripts/

@@ -1,0 +1,59 @@
+# Rust/Cargo
+/target/
+**/*.rs.bk
+*.pdb
+
+# Godot 4.x
+.godot/
+*.import
+*.translation
+.mono/
+data_*/
+mono_crash.*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node.js (for documentation tooling)
+node_modules/
+
+# Temporary files (PR bodies, scripts)
+/temp/
+.github/PR_DESCRIPTION.md
+
+# OS
+Thumbs.db
+.DS_Store
+*.log
+
+# Build artifacts
+*.dll
+*.so
+*.dylib
+*.a
+
+# Debug
+*.dSYM/
+
+# Documentation builds
+/target/doc/
+
+# Test coverage reports
+/target/coverage/
+*.profraw
+*.profdata
+lcov.info
+cobertura.xml
+tarpaulin-report.html
+
+# Godot UID files (auto-generated)
+*.gdextension.uid
+*.gd.uid
+
+# Harness-generated test scenes (rebuilt every ferris-test run)
+godot_test/tests/generated/
